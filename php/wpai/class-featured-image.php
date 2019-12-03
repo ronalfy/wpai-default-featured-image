@@ -1,19 +1,19 @@
 <?php
 /**
- * Set up the REST API for getting a list of Social Networks.
+ * Set up the WP All Import to get a WooCommerce featured image.
  *
- * @package   User_Profile_Picture_Enhanced
+ * @package   WPAI_DFI
  */
 
 namespace WPAI_DFI\WPAI;
 
 /**
- * Class Admin
+ * Class Featured_Image
  */
 class Featured_Image {
 
 	/**
-	 * Initialize the Admin component.
+	 * Initialize the Featured_Image component.
 	 */
 	public function init() {
 

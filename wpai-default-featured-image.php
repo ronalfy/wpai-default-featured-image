@@ -7,7 +7,7 @@
  * @license http://opensource.org/licenses/GPL-2.0 GNU General Public License, version 2 (GPL-2.0)
  *
  * Plugin Name: WP All Import Default Featured Image
- * Plugin URI: https://mediaron.com/downloads/user-profile-picture-enhanced/
+ * Plugin URI: https://mediaron.com
  * Description: Sets a default featured image for WP All Import if none exists. Uses WooCommerce for the default image.
  * Version: 1.0.0
  * Author: MediaRon LLC
