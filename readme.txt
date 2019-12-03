@@ -1,29 +1,21 @@
-=== User Profile Picture Enhanced ===
-Contributors: ronalfy, BinaryMoon
+=== WP All Import Default Featured Image ===
+Contributors: ronalfy
 Requires at least: 5.0
-Tested up to: 5.2
-Stable tag: 1.1.1
+Tested up to: 5.4
+Stable tag: 1.0.0
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://mediaron.com/give/
 
-Create author boxes per post type and have a public diretory of users.
+Sets a default featured image for WP All Import if none exists. Uses WooCommerce for the default image.
 
 == Description ==
 
-Create author boxes per post type and have a public diretory of users.
+Sets a default featured image for WP All Import if none exists. Uses WooCommerce for the default image.
 
 == Changelog ==
 
-= 1.1.1 =
-* Released 2019-08-09
-* Fixing author undefined in second author box.
-
-= 1.1.0 =
-* Released 2019-08-08
-* Added a second author box block with more configuration options.
-
 = 1.0.0 =
-* Released 2019-07-14
-* Initial Release.
+* Released 2019-12-03
+* Initial release.
