@@ -40,24 +40,17 @@ class Featured_Image {
 		if ( 'product' !== get_post_type( $post_id ) ) {
 			return;
 		}
-
 		// Check to see if the post has a featured image.
-		if ( has_post_thumbnail( $post_id ) ) {
+		if ( ! empty( wp_get_attachment_image( get_post_meta( $post_id, '_thumbnail_id', true ) ) ) ) {
 			return;
 		}
 
 		// No featured image, let's use the WooCommerce featured image.
-		$featured_image_id = get_option( 'woocommerce_placeholder_image', false );
-
-		// Featured Image may be a string, so return if it is.
-		if ( ! is_int( $featured_image_id ) ) {
-			return;
-		}
+		$featured_image_id = absint( get_option( 'woocommerce_placeholder_image', false ) );
 
 		// Let's make sure the featured image is on the site.
 		if ( ! empty( wp_get_attachment_image( $featured_image_id ) ) ) {
-			set_post_thumbnail( $post_id, $featured_image_id );
-			error_log( 'Setting default image for: ', $post_id );
+			update_post_meta( $post_id, '_thumbnail_id', $featured_image_id );
 		}
 	}
 }
